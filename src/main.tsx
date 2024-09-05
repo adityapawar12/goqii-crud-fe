@@ -6,6 +6,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Toaster } from "@/components/ui/toaster";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import { Navigate } from "react-router-dom";
 
 import ErrorPage from "./error-page";
 import RootLayout from "./routes/root-layout";
@@ -15,6 +16,10 @@ import UsersCreatePage from "./routes/users/create/users-create-page";
 import UsersUpdatePage from "./routes/users/update/users-update-page";
 
 const router = createBrowserRouter([
+  {
+    index: true, // This will match the root path `/`
+    element: <Navigate to="users" replace />, // Redirect to /users
+  },
   {
     path: "/",
     element: <RootLayout />,
