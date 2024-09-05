@@ -15,7 +15,7 @@ Before you start, make sure you have the following installed:
 
 ```bash
 git clone https://github.com/adityapawar12/goqii-crud-fe.git
-cd your-repo-name
+cd goqii-crud-fe
 ```
 
 ### 2. Add a .env file
@@ -31,7 +31,7 @@ VITE_API_BASE_URL=http://your-api-url-here.com
 Run the following command to install all the necessary packages:
 
 ```bash
-VITE_API_BASE_URL=http://your-api-url-here.com
+npm i
 ```
 
 ### 4. Run the application
